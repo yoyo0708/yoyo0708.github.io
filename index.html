@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 <style type="text/css">
 	@font-face {
 	font-family: "ch";
@@ -12,6 +13,7 @@
 	src: url("orbitron.ttf");
 }
 
+
 h1{
 font-family: ch;
 font-size: 100px;
@@ -21,6 +23,7 @@ text-align: center;
 body{
 font-family: bb;
 background: pink;
+font: 50px;
 }
 h1:hover{
 	color:white;
@@ -47,6 +50,22 @@ img{
 	right: 1%;
 	top: 60%;
 }
+.grid{
+	display: grid;
+	grid-template-rows: 5rem 5rem;
+	grid-template-columns: repeat(10, 1fr);
+	border: solid 1px black;
+	width:100%;
+
+	text-align: center;
+	/*left: 200px;*/
+
+}
+#one{
+	grid-column: 6;
+    grid-row: 2;
+    background: orange;
+}
 address{
 	position: absolute;
 	top: 180%;
@@ -57,10 +76,50 @@ footer{
 	position: fixed;
 	left: 5%;
 }
+@media(max-width:500px){
+	h1{
+		color: blue;
+	}
+	 html {
+    font-size: 80%; /* aka 10px */
+  }
+	body{
+font-family: bb;
+background: yellow;
+
+}
+.web{
+	font-size: 30px;
+}
+img{
+	transform: scale(0.7,0.7);
+	
+	position: absolute;
+	left: 25%;
+	top: 10%;
+}
+.poem{
+	top:70%;
+	position: absolute;
+}
+ul{
+	font-size: 20px;
+}
+
+}
 </style>
 	<title>My Profile</title>
 </head>
 <body>
+	<!-- <div class="grid">
+	<div id="one">1</div>
+	<div>1</div>
+	<div>1</div>
+	<div>1</div>
+	<div>1</div>
+	<div>1</div> -->
+
+</div>
 	<h1>Hi, My name is Irene Xu</h1>
 	<img src="me3.png" alt="My Profile picture" height="150">
 	<div class="web">
@@ -80,8 +139,8 @@ footer{
       <menuitem>menu - menu list</menuitem>
     </menu> -->
 
-	<cite>blallalalalalal</cite>
-	<em>alalalalalal</em>
+<!-- 	<cite>blallalalalalal</cite>
+	<em>alalalalalal</em> -->
 	<dialog>hello</dialog>
 <form></form>
 </div>
@@ -105,12 +164,13 @@ footer{
 	<dt>My favourite color:</dt>
 	<dd><span style="color: blue">blue</span></dd>
 </dl>
-<address>if you want to contect me please reach me from: <a href="xuy805@newschool.edu">xuy805@newschool.edu</a></address>
-<address>if you want to contect me please reach me from: <a href="xuy805@newschool.edu">xuy805@newschool.edu</a></address>
-<address>if you want to contect me please reach me from: <a href="xuy805@newschool.edu">xuy805@newschool.edu</a></address>
+<address>if you want to contect me please reach me from: <a href="mailto:xuy805@newschool.edu">xuy805@newschool.edu</a></address>
+<address>if you want to contect me please reach me from: <a href="mailto:xuy805@newschool.edu">xuy805@newschool.edu</a></address>
+<address>if you want to contect me please reach me from: <a href="mailto:xuy805@newschool.edu">xuy805@newschool.edu</a></address>
 <footer>
 	<a href="https://lexi-oneill.github.io">Lexi</a>
 </footer>
+
 
 </body>
 </html>
