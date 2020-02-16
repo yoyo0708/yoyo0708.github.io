@@ -1,0 +1,374 @@
+
+@font-face{font-family: "bb";
+	src: url("chicago.ttf");}
+@keyframes wave_left{
+	25%{
+		left: -20%;
+		top: 20%;
+	}
+
+	50%{
+		left: -10%;
+		top: 0%;
+	}
+	75%{
+		left: -20%;
+		top: 20%;
+	}
+	100%{
+		left: 0%;
+		top: 50%;
+	}
+}
+@keyframes wave_right{
+	25%{
+		right: -20%;
+		top: 20%;
+	}
+
+	50%{
+		right: -10%;
+		top: 0%;
+	}
+	75%{
+		right: -20%;
+		top: 20%;
+	}
+	100%{
+		right: 0%;
+		top: 50%;
+	}
+}
+@keyframes mouth{
+	50%{
+		height: 0.6rem;
+	}
+	100%{
+		height: 0.2rem;
+	}
+}
+/*@keyframes plan_water{
+	50%{
+		height: 100%;
+	}
+	100%{
+		height: 0%;
+	}
+}*/
+
+
+@media (max-width: 1500px) {
+	body{
+	background-color: #fbf0f0;
+	font-size: 62.5%;
+}
+.body{
+	position: fixed;
+		display: grid;
+	grid-template-rows: repeat(20, 1fr);
+	grid-template-columns: repeat(10, 1fr);
+/*	border: solid 1px black;*/
+	display:grid;
+	width:1440px;
+	height: 800px;
+}
+/*.tv{
+	position: absolute;
+	left: 27%;
+	top: 20%;
+	width: 40%;
+	height: 35%;
+
+}
+.tv_frame{
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	border: 2.5rem solid #7c7575;
+
+}
+.wire{
+	position: absolute;
+	left: 80%;
+	bottom: 80%;
+	width: 1rem;
+	height: 100%;
+	background-color: #7c7575;
+	transform: rotate(45deg);
+}
+.wire2{
+	position: absolute;
+	left: 30%;
+	bottom: 80%;
+	width: 1rem;
+	height: 100%;
+	background-color: #7c7575;
+	transform: rotate(-45deg);
+}*/
+.wall{
+	position: fixed;
+	left: 33%;
+	top: -10%;
+	width: 30%;
+	height: 125%;
+	border: 2.5rem solid #b7472a;
+
+}
+.people{
+	position: absolute;
+	bottom: 15%;
+	left: 40%;
+	width: 5rem;
+	height: 8rem;
+	background-color: transparent;
+}
+.head{
+	position: absolute;
+	top: 0%;
+	left: 10%;
+	height: 4rem;
+	width: 4rem;
+	border-radius: 50%;
+	background: #ffd5ab;
+}
+.eye1{
+	position: absolute;
+	left: 20%;
+	top: 30%;
+	width: 0.5rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-color: black;
+}
+.eye2{
+	position: absolute;
+	left: 70%;
+	top: 30%;
+	width: 0.5rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-color: black;
+}
+.mouth{
+	position: absolute;
+	left: 39%;
+	top: 70%;
+	width: 1rem;
+	height: 0.2rem;
+	border-radius: 20%;
+	background-color: #b7472a;
+	animation: mouth 1s infinite ;
+}
+.leg1{
+	position: absolute;
+	height: 8rem;
+	width: 1rem;
+	top: 4%;
+	left: 25%;
+	border-radius: 10%;
+	transform: skewY(30deg) rotateX(45deg);
+	background: #eb9788;
+	z-index: -1;
+}
+.leg2{
+	position: absolute;
+	height: 8rem;
+	width: 1rem;
+	top: 4%;
+	right: 25%;
+	border-radius: 10%;
+	transform: skewY(-30deg) rotateX(45deg);
+	background: #eb9788;
+	z-index: -1;
+}
+.hand1{
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	height: 1rem;
+	width: 1rem;
+	border-radius: 50%;
+	background: #ffd5ab;
+	animation: wave_left 4s infinite ;
+}
+.hand2{
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	height: 1rem;
+	width: 1rem;
+	border-radius: 50%;
+	background: #ffd5ab;
+	animation: wave_right 4s infinite;
+}
+.water{
+	font-family: bb;
+	font-size: 2rem;
+	grid-column: 1/4;
+    grid-row: 1/10;
+    background: blue;
+    	display:grid;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    	transition: ease-in-out 2s;
+
+}
+.water:hover{
+	color: white;
+	background-color: #b7472a;
+	transition: ease-in-out 2s;
+}
+.ballon{
+	font-family: bb;
+	font-size: 2rem;
+	grid-column: 8/11;
+    grid-row: 1/10;
+    background: pink;
+      padding: 1rem 1rem 1rem 1rem;
+       text-align: center;
+      transition: ease-in-out 2s;
+}
+.ballon:hover{
+	color: white;
+	background-color: #b7472a;
+	transition: ease-in-out 2s;
+}
+.rope{
+	font-family: bb;
+	font-size: 2rem;
+	grid-column: 1/4;
+    grid-row: 11/21;
+
+    	display:grid;
+    	  padding: 1rem 1rem 1rem 1rem;
+    	   text-align: center;
+
+}
+.how{
+	font-family: bb;
+	font-size: 2rem;
+	grid-column: 8/11;
+    grid-row: 11/21;
+    background: transparent;
+    	display:grid;
+    	  padding: 1rem 1rem 1rem 1rem;
+    	   text-align: center;
+
+}
+.plan_water{
+	left: 36%;
+	width: 30%;
+	height: 0%;
+	position: fixed;
+	bottom: 0%;
+	background-color: rgba(81,157,249,0.5);
+	color: transparent;
+	font-size: 0px;
+	transition: ease-in-out 12s;
+}
+.plan_ballon{
+	position: absolute;
+	width: 6rem;
+	height: 6rem;
+	background-color: red;
+	border-radius: 50%;
+	right: 50%;
+	top: -40%;
+		transition: ease-in-out 2s;
+		font-size: 1rem;
+	color: white;
+
+}
+.ballon_rope{
+	position: absolute;
+	width: 0.2rem;
+	height: 15rem;
+	background-color: black;
+	left: 50%;
+	top: 20%;
+	z-index: -100;
+
+}
+.water:hover .plan_water{
+/*animation: plan_water 10s infinite ;*/
+height: 100%;
+font-size: 2rem;
+color: white;
+transition: ease-in-out 12s;
+
+}
+.ballon:hover .plan_ballon{
+	transition: ease-in-out 12s;
+	top: 40%;
+}
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 32.5%;
+    background: #fbf0f0;
+  }
+  .body{
+	position: fixed;
+		display: grid;
+	grid-template-rows: repeat(20, 1fr);
+	grid-template-columns: repeat(10, 1fr);
+/*	border: solid 1px black;*/
+	display:grid;
+	width:600px;
+	height: 400px;
+}
+.water{
+	font-family: bb;
+	font-size: 1rem;
+	grid-column: 1/4;
+    grid-row: 1/10;
+    background: blue;
+    	display:grid;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+
+}
+.ballon{
+	font-family: bb;
+	font-size: 1rem;
+	grid-column: 7/10;
+    grid-row: 1/10;
+    background: pink;
+      padding: 1rem 1rem 1rem 1rem;
+       text-align: center;
+
+}
+.rope{
+	font-size: 1rem;
+	grid-column: 1/4;
+    grid-row: 11/21;
+
+}
+.how{
+
+	font-size: 1rem;
+	grid-column: 7/10;
+    grid-row: 11/21;
+
+}
+.wall{
+	border: 1.5rem solid #b7472a;
+}
+.plan_water{
+	left: 38%;
+}
+.water:hover .plan_water{
+/*animation: plan_water 10s infinite ;*/
+
+font-size: 1rem;
+
+}
+.plan_ballon{
+	top: -70%;
+}
+.people{
+	left: 30%;
+}
+}
