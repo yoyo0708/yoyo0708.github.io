@@ -1,0 +1,72 @@
+
+@keyframes ball{
+50%{
+bottom: 32%;
+}
+100%{
+bottom:48%;
+}
+}
+
+@media(max-width:1800px){
+.body{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	background-image: linear-gradient(#fc8eac, #f2583e);
+	display: grid;
+	grid-template-rows: repeat(6, 1fr);
+	grid-template-columns: repeat(6, 1fr);
+}
+.bar1{
+	grid-column: 2/7;
+    grid-row: 5;
+    display:grid;
+
+    background-color:white;
+    transition: ease-in-out 2s;
+}
+.bar1:hover{
+    background-color:#dc143c;
+
+    transition: ease-in-out 1s;
+
+}
+.bar2{
+	grid-column: 4;
+    grid-row: 3;
+    display:grid;
+
+    background-color:white;
+    transition: ease-in-out 2s;
+}
+.bar2:hover{
+    background-color:#dc143c;
+
+    transition: ease-in-out 2s;
+
+}
+.ball{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color:#87CEEB;
+	display: grid;
+left: 55%;
+bottom:48%;
+    animation: ball linear 0.5s infinite;
+    transition: ease-in-out;
+}
+}
+@media(max-width:500px){
+.body{
+background-image: linear-gradient(#E6E6FA, #9370DB);
+}
+.ball{
+	background-color:yellow;
+}
+
+}
