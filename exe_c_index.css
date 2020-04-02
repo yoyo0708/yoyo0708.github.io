@@ -1,0 +1,39 @@
+@font-face{
+	font-family: chicago;
+	src: url(chicago.ttf);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: arial;
+  text-align: center;
+  background: black;
+  color: pink;
+}
+
+.input-wrapper {
+  display: flex;
+  margin: 1.5rem 0 3rem 0;
+}
+
+h2{
+font-size: 3rem;
+
+}
+
+input {
+  width: 100%;
+  background: red;
+  color: pink;
+  font-weight: 900;
+}
+
+.sentence {
+  height: 3.5rem;
+}
+
+.style_one{
+ font-family: chicago;
+ font-size: 40px;
+ color: red;
+}
